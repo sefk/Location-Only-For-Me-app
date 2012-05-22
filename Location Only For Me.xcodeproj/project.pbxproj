@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		862FB6BA156C464C00C307B9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862FB6B9156C464C00C307B9 /* CoreData.framework */; };
 		862FB6BD156C465300C307B9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862FB6BC156C465300C307B9 /* CoreLocation.framework */; };
+		866EC9A9156C478A004DE931 /* LOFMDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 866EC9A7156C478A004DE931 /* LOFMDataModel.xcdatamodeld */; };
+		866EC9B0156C4B28004DE931 /* LOFMMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 866EC9AF156C4B28004DE931 /* LOFMMapViewController.m */; };
 		8699E441156C448E005A0741 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8699E440156C448E005A0741 /* UIKit.framework */; };
 		8699E443156C448E005A0741 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8699E442156C448E005A0741 /* Foundation.framework */; };
 		8699E445156C448E005A0741 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8699E444156C448E005A0741 /* CoreGraphics.framework */; };
@@ -37,6 +39,9 @@
 /* Begin PBXFileReference section */
 		862FB6B9156C464C00C307B9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		862FB6BC156C465300C307B9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		866EC9A8156C478A004DE931 /* LOFMDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LOFMDataModel.xcdatamodel; sourceTree = "<group>"; };
+		866EC9AE156C4B28004DE931 /* LOFMMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOFMMapViewController.h; sourceTree = "<group>"; };
+		866EC9AF156C4B28004DE931 /* LOFMMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOFMMapViewController.m; sourceTree = "<group>"; };
 		8699E43C156C448E005A0741 /* Location Only For Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Location Only For Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8699E440156C448E005A0741 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8699E442156C448E005A0741 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -119,12 +124,15 @@
 		8699E446156C448E005A0741 /* Location Only For Me */ = {
 			isa = PBXGroup;
 			children = (
+				8699E452156C448E005A0741 /* LOFM-iPhone.storyboard */,
+				866EC9AE156C4B28004DE931 /* LOFMMapViewController.h */,
+				866EC9AF156C4B28004DE931 /* LOFMMapViewController.m */,
 				8699E44F156C448E005A0741 /* LOFMAppDelegate.h */,
 				8699E450156C448E005A0741 /* LOFMAppDelegate.m */,
-				8699E452156C448E005A0741 /* LOFM-iPhone.storyboard */,
 				8699E455156C448E005A0741 /* LOFMViewController.h */,
 				8699E456156C448E005A0741 /* LOFMViewController.m */,
 				8699E447156C448E005A0741 /* Supporting Files */,
+				866EC9A7156C478A004DE931 /* LOFMDataModel.xcdatamodeld */,
 			);
 			path = "Location Only For Me";
 			sourceTree = "<group>";
@@ -270,6 +278,8 @@
 				8699E44D156C448E005A0741 /* main.m in Sources */,
 				8699E451156C448E005A0741 /* LOFMAppDelegate.m in Sources */,
 				8699E457156C448E005A0741 /* LOFMViewController.m in Sources */,
+				866EC9A9156C478A004DE931 /* LOFMDataModel.xcdatamodeld in Sources */,
+				866EC9B0156C4B28004DE931 /* LOFMMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +461,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		866EC9A7156C478A004DE931 /* LOFMDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				866EC9A8156C478A004DE931 /* LOFMDataModel.xcdatamodel */,
+			);
+			currentVersion = 866EC9A8156C478A004DE931 /* LOFMDataModel.xcdatamodel */;
+			path = LOFMDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8699E433156C448E005A0741 /* Project object */;
 }

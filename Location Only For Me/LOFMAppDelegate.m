@@ -7,6 +7,7 @@
 //
 
 #import "LOFMAppDelegate.h"
+#import <CoreLocation/CoreLocation.h>
 
 @implementation LOFMAppDelegate
 
@@ -14,7 +15,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    CLLocationManager * lm = [[CLLocationManager alloc] init];
+    
+    if ([lm locationServicesEnabled] == NO) {
+        UIAlertView *servicesDisabledAlert = [[UIAlertView alloc] initWithTitle:@"Location Services Disabled" message:@"You currently have all location services for this device disabled. If you proceed, you will be asked to confirm whether location services should be reenabled." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [servicesDisabledAlert show];
+    }
+    
+    [lm startMonitoringSignificantLocationChanges];
+    
     return YES;
 }
 							
@@ -42,7 +51,8 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    CLLocationManager *lm = [[CLLocationManager alloc] init];
+    [lm stopMonitoringSignificantLocationChanges];
 }
 
 @end
