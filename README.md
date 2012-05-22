@@ -12,9 +12,9 @@ on this, especially `startMonitoringSignificantLocationChanges`.
    [CL-doc]: http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html
 
 The app will be free, and the source code publically available so
-you can reassure yourself that no funny business is going on with
-something that has access to something as important as your physical
-location.
+you can reassure yourself that no funny business is going on here.
+You're letting this app track your physical location, and it doesn't
+get much more important than that.
 
 For more information, send me mail.  Thanks.
 
