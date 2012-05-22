@@ -6,10 +6,10 @@ The key thing this app does is to use Apple's Core Location
 capabilities that notify apps when "significant changes" happen,
 like moving from one cell tower to another.  These notifications
 happen when the app isn't "running" per se, and don't cause a drain
-on your battery.   For more information see the [Apple documentation][1]
+on your battery.   For more information see the [Apple documentation][CL-doc]
 on this, especially `startMonitoringSignificantLocationChanges`.
 
-   [1] - http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html
+   [CL-doc]: http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html
 
 The app will be free, and the source code publically available so
 you can reassure yourself that no funny business is going on with
@@ -18,4 +18,4 @@ location.
 
 For more information, send me mail.  Thanks.
 
-\- Sef Kloninger (sef@kloninger.com)
+\- Sef Kloninger ([sef@kloninger.com](mailto:sef@kloninger.com))
