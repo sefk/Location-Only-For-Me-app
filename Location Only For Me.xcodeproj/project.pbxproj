@@ -23,7 +23,7 @@
 		8699E460156C448E005A0741 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8699E440156C448E005A0741 /* UIKit.framework */; };
 		8699E461156C448E005A0741 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8699E442156C448E005A0741 /* Foundation.framework */; };
 		8699E469156C448E005A0741 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8699E467156C448E005A0741 /* InfoPlist.strings */; };
-		8699E46C156C448E005A0741 /* Location_Only_For_MeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8699E46B156C448E005A0741 /* Location_Only_For_MeTests.m */; };
+		8699E46C156C448E005A0741 /* LOFMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8699E46B156C448E005A0741 /* LOFMTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +59,8 @@
 		8699E45E156C448E005A0741 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		8699E466156C448E005A0741 /* Location Only For MeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Location Only For MeTests-Info.plist"; sourceTree = "<group>"; };
 		8699E468156C448E005A0741 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8699E46A156C448E005A0741 /* Location_Only_For_MeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location_Only_For_MeTests.h; sourceTree = "<group>"; };
-		8699E46B156C448E005A0741 /* Location_Only_For_MeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location_Only_For_MeTests.m; sourceTree = "<group>"; };
+		8699E46A156C448E005A0741 /* LOFMTests.h */ = {isa = PBXFileReference; path = LOFMTests.h; sourceTree = "<group>"; };
+		8699E46B156C448E005A0741 /* LOFMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LOFMTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				8699E446156C448E005A0741 /* Location Only For Me */,
-				8699E464156C448E005A0741 /* Location Only For MeTests */,
+				8699E464156C448E005A0741 /* Tests */,
 				8699E43F156C448E005A0741 /* Frameworks */,
 				8699E43D156C448E005A0741 /* Products */,
 			);
@@ -148,13 +148,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8699E464156C448E005A0741 /* Location Only For MeTests */ = {
+		8699E464156C448E005A0741 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				8699E46A156C448E005A0741 /* Location_Only_For_MeTests.h */,
-				8699E46B156C448E005A0741 /* Location_Only_For_MeTests.m */,
+				8699E46A156C448E005A0741 /* LOFMTests.h */,
+				8699E46B156C448E005A0741 /* LOFMTests.m */,
 				8699E465156C448E005A0741 /* Supporting Files */,
 			);
+			name = Tests;
 			path = "Location Only For MeTests";
 			sourceTree = "<group>";
 		};
@@ -287,7 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8699E46C156C448E005A0741 /* Location_Only_For_MeTests.m in Sources */,
+				8699E46C156C448E005A0741 /* LOFMTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
