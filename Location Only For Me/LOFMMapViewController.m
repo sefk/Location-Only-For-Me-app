@@ -7,12 +7,15 @@
 //
 
 #import "LOFMMapViewController.h"
+#import <MapKit/MapKit.h>
 
 @interface LOFMMapViewController ()
+@property (weak, nonatomic) IBOutlet MKMapView *mapview;
 
 @end
 
 @implementation LOFMMapViewController
+@synthesize mapview;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,6 +34,7 @@
 
 - (void)viewDidUnload
 {
+    [self setMapview:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

@@ -33,6 +33,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" id="V7G-MH-Cv6"/>
+                    <connections>
+                        <outlet property="mapview" destination="VcH-Wh-O2i" id="XVp-V7-gWD"/>
+                        <outlet property="view" destination="mzh-xr-TPP" id="xBt-4e-XWg"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-74" y="-117"/>
