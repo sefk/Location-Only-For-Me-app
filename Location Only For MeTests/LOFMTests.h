@@ -8,6 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface Location_Only_For_MeTests : SenTestCase
+@interface LOFMTests : SenTestCase
 
 @end

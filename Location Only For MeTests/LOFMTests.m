@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 Peek 222 Software. All rights reserved.
 //
 
-#import "Location_Only_For_MeTests.h"
+#import "LOFMTests.h"
 
-@implementation Location_Only_For_MeTests
+@implementation LOFMTests
 
 - (void)setUp
 {
