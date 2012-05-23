@@ -15,13 +15,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    CLLocationManager * lm = [[CLLocationManager alloc] init];
-    
-    if ([lm locationServicesEnabled] == NO) {
+    if ([CLLocationManager locationServicesEnabled] == NO) {
         UIAlertView *servicesDisabledAlert = [[UIAlertView alloc] initWithTitle:@"Location Services Disabled" message:@"You currently have all location services for this device disabled. If you proceed, you will be asked to confirm whether location services should be reenabled." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [servicesDisabledAlert show];
     }
-    
+
+    CLLocationManager * lm = [[CLLocationManager alloc] init];
     [lm startMonitoringSignificantLocationChanges];
     
     return YES;
